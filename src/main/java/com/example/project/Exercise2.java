@@ -21,7 +21,11 @@ public class Exercise2 {
 
 
     public <T extends Comparable<T>> boolean bstIguales(BST<T> a1, BST<T> a2){
-
+    	String s1 = a1.preOrder();
+    	String s2 = a2.preOrder();
+    	if (s1.equals(s2)) {
+			return true;
+		}
         return false;
     }
 }
